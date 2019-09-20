@@ -1,0 +1,41 @@
+{
+  "name": "printify-api",
+  "version": "0.1.1",
+  "description": "Printify's REST API allows your application to manage a Printify shop on behalf of a Printify Merchant. Create products, submit orders, and more...",
+  "main": "dist/index.js",
+  "author": "Nasa8x",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --progress --watch --colors",
+    "prod": "cross-env NODE_ENV=production webpack -p --progress --colors",
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasa8x/printify-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nasa8x/printify-api/issues"
+  },
+  "homepage": "https://developers.printify.com/",
+  "keywords": [
+    "printify",
+    "printify api",
+    "printify client",
+    "printify rest api"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.2.1",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
