@@ -49,3 +49,5 @@ Webhook.prototype = {
 
 
 }
+
+module.exports = Webhook;

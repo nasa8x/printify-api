@@ -63,3 +63,5 @@ Product.prototype = {
 
     }
 }
+
+module.exports = Product;

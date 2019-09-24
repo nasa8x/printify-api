@@ -4,23 +4,25 @@
 
 Printify's REST API allows your application to manage a Printify shop on behalf of a Printify Merchant. Create products, submit orders, and more...
 
-## API Usage Guidelines
+### API Usage Guidelines
 
 [developers.printify.com](https://developers.printify.com)
 
-## If you don't know Node.js 
+### If you don't know Node.js 
+
+[Node.js Tutorial for Beginners in 2020](https://morioh.com/p/0907cef2141c)
 
 [How To Build a Blog with Nest.js, MongoDB, and Vue.js](https://morioh.com/p/74ffc8a798bb)
 
 [Machine Learning In Node.js With TensorFlow.js](https://morioh.com/p/a517bc403340)
 
-## Install
+### Install
 
 ```js
 npm i printify-api --save
 ```
 
-## Example
+### Example
 
 ```js
 
@@ -236,7 +238,7 @@ var order = {
     }
 };
 
-var result = await API.Order.shipping_cost(order, shop_id);
+var result = await API.Order.shipping_cost(order);
 
 // or custom shop_id
 var result = await API.Order.shipping_cost(order, shop_id);
