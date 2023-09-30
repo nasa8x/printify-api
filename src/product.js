@@ -36,7 +36,7 @@ Product.prototype = {
     update: function (data, shop_id) {
         shop_id = this.id(shop_id);
         var id = data.id;
-        return this.axios.put(`shops/${shop_id}/products/${id}.json`);
+        return this.axios.put(`shops/${shop_id}/products/${id}.json`, data);
     },
 
     // Delete a product
